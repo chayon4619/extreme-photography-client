@@ -5,12 +5,15 @@ const Header = () => {
 
     const navItem = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
+        <li className='font-semibold'><Link to='/login'>Login</Link></li>
+        <li className='font-semibold'><Link to='/register'>Register</Link></li>
+        <li className='font-semibold'><Link to='/'>Logout</Link></li>
         <li className='font-semibold'><Link to='/blogs'>Blogs</Link></li>
     </>
 
     return (
         <div>
-            <div className="navbar bg-gray-700 text-gray-100">
+            <div className="navbar bg-cyan-500 text-gray-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,7 +36,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/about' className="btn">About Me</Link>
+                    <Link to='/about' className="btn btn-outline">About Me</Link>
                 </div>
             </div>
         </div>

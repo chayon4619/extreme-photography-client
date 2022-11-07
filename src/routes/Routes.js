@@ -3,6 +3,8 @@ import Main from "../layout/Main";
 import About from "../pages/About/About";
 import Blogs from "../pages/Blogs/Blogs";
 import Home from "../pages/Home/Home";
+import Login from "../pages/LoginAndRegister/Login";
+import Register from "../pages/LoginAndRegister/Register";
 import ErrorPage from "../pages/shared/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
@@ -22,6 +24,14 @@ export const router = createBrowserRouter([
             {
                 path: '/blogs',
                 element: <Blogs></Blogs>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
