@@ -16,7 +16,12 @@ const Header = () => {
         <li className='font-semibold'><Link to='/'>Home</Link></li>
         {
             user?.email ?
-                <li className='font-semibold'><Link onClick={handelLogout} to='/'>Logout</Link></li>
+
+                <>
+                    <li className='font-semibold'><Link to='/myreviews'>My Reviews</Link></li>
+                    <li className='font-semibold'><Link to='/addservice'>Add Services</Link></li>
+                    <li className='font-semibold'><Link onClick={handelLogout} to='/'>Logout</Link></li>
+                </>
                 :
                 <>
                     <li className='font-semibold'><Link to='/login'>Login</Link></li>

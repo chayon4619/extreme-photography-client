@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "636962381a196cfc845bb5b5",
+        "price": "304.44",
+        "picture": "https://images.pexels.com/photos/1912176/pexels-photo-1912176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Wildlife Photography",
+        "about": "Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.As well as requiring photography skills, wildlife photographers may need field craft skills. For example, some animals and birds are difficult to approach and thus a knowledge of the animal's and birds behavior is needed in order to be able to predict its actions. Photographing some species may require stalking skills or the use of a hide/blind for concealment. While wildlife photographs can be taken using basic equipment, successful photography of some types of wildlife requires specialist equipment, such as macro lenses for insects, long focal length lenses for birds and underwater cameras for marine life. However, a great wildlife photograph can involve a understanding of animal behavior."
+    },
+    {
+        "_id": "63696238daaa5de97075cd59",
+        "price": "277.16",
+        "picture": "https://cloudfront.slrlounge.com/wp-content/uploads/2020/12/how-to-become-sports-photographer-1200x675.jpg",
+        "name": "Sports Photography",
+        "about": "Sports photography refers to the genre of photography that covers all types of sports.In the majority of cases, professional sports photography is a branch of photojournalism, while amateur sports photography, such as photos of children playing association football, is a branch of vernacular photography.The main application of professional sports photography is for editorial purposes; dedicated sports photographers usually work for newspapers, major wire agencies or dedicated sports magazines. However, sports photography is also used for advertising purposes both to build a brand and as well as to promote a sport in a way that cannot be accomplished by editorial means.In order to minimize motion blur of moving subjects, the light sensitivity  is increased, which shortens the necessary exposure time to capture sufficient light. The trade-off of increasing light sensitivity is increased noise, so sports photography is most effective in daylight and with higher-end cameras that are equipped with larger image sensors that capture more light and support higher light sensitivities."
+    },
+    {
+        "_id": "63696238c10ea72b7b0d6eaa",
+        "price": "380.32",
+        "picture": "http://philipjonesgriffiths.org/wp-content/uploads/2018/03/par93993-teaser-story-big.jpg",
+        "name": "Photojournalism",
+        "about": "Photojournalism is journalism that uses images to tell a news story. It usually only refers to still images, but can also refer to video used in broadcast journalism Photojournalism is distinguished from other close branches of photography (such as documentary photography, social documentary photography, war photography, street photography and celebrity photography) by having a rigid ethical framework which demands an honest but impartial approach that tells a story in strictly journalistic terms. Photojournalists contribute to the new media, and help communities connect with one other. They must be well-informed and knowledgeable, and are able to deliver news in a creative manner that is both informative and entertaining. Similar to a writer, a photojournalist is a reporter, but they must often make decisions instantly and carry photographic equipment, often while exposed to significant obstacles, among them immediate physical danger, bad weather, large crowds, and limited physical access to their subjects."
+    },
+    {
+        "_id": "63696238184506b56233e317",
+        "price": "349.51",
+        "picture": "https://www.tuhinhossainphotography.com/wp-content/themes/tuhin-photography/assets/img/wedding/large/WEDDING-PHOTO_10.jpg",
+        "name": "Wedding Photography",
+        "about": "Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session (photographs are later used for the couple wedding invitations). On the official wedding day, the photographer(s) will attempt to provide portrait photography, as well as documentary photography coverage to document the different wedding events and rituals throughout the wedding days.Two approaches to wedding photography are traditional and photojournalistic. Many wedding photographers will fall somewhere in between the extremes represented by these two descriptions. Traditional wedding photography provides for more classically posed images and a great deal of photographer control during the ceremony. A Photojournalist style of wedding photography takes its cue from editorial reporting styles and focuses more on candid images with little photographer interaction; a wedding photojournalist typically shoots images quickly using available light or on-camera flash rather than using traditional, formal posing techniques and studio lights."
+    },
+    {
+        "_id": "636962388e0433d2c842e7d0",
+        "price": "130.84",
+        "picture": "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2017/07/Kav-Dadfar-2017-Realities-DigitalPS-3.jpg?fit=750%2C563&ssl=1",
+        "name": "Travel Photography",
+        "about": "Travel photography is a genre of photography that may involve the documentation of an area's landscape, people, cultures, customs, and history. The Photographic Society of America defines a travel photo as an image that expresses the feeling of a time and place, portrays a land, its people, or a culture in its natural state, and has no geographical limitations. Travel photography as a genre is one of the most open in terms of the subjects it covers. Many travel photographers specialize in a particular aspect of photography such as travel portraits, landscape or documentary photography as well as shooting all aspects of travel. Much of today's Travel Photography style is derived from early work in Magazines such as National Geographic magazine from photographers such as Steve McCurry. This genre of photography entails shooting a wide variety of subjects under varied available conditions, e.g. low light photography indoors, available ambient light photography for exteriors of buildings and monuments, shooting on the streets where sometimes conditions may be hostile, capturing moments which rarely recur, capturing the magic of light while shooting landscapes, etc.  As travel has become more accessible, more and more, the genre is opening up to amateurs and professionals alike. Amateur Travel photography is often shared through sites like Flickr, 500px and 1x. Travel photography, unlike other genres like fashion, product, or food photography, is still an underestimated and relatively less monetized genre, though the challenges faced by travel photographers are a lot greater than some of the genres where the light and other shooting conditions may be controllable. Traditionally travel photographers earned money through Stock photography, magazine assignments, and commercial projects. Nowadays, the stock photography market has collapsed and more and more photographers are using more innovative methods of earning a living such as through blogging, public speaking, commercial projects, and teaching."
+    },
+    {
+        "_id": "63696238f0d14010a12d4493",
+        "price": "320.07",
+        "picture": "https://www.indiewire.com/wp-content/uploads/2018/02/tri-12139r.jpg",
+        "name": "Cinematography",
+        "about": "Cinematography is the art of motion picture (and more recently, electronic video camera) photography. Cinematographers use a lens to focus reflected light from objects into a real image that is transferred to some image sensor or light-sensitive material inside a movie camera. These exposures are created sequentially and preserved for later processing and viewing as a motion picture. Capturing images with an electronic image sensor produces an electrical charge for each pixel in the image, which is electronically processed and stored in a video file for subsequent processing or display. Images captured with photographic emulsion result in a series of invisible latent images on the film stock, which are chemically developed into a visible image. The images on the film stock are projected for viewing the same motion picture Cinematography finds uses in many fields of science and business, as well as for entertainment purposes and mass communication."
+    }
+]
