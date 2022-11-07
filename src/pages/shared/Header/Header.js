@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 const Header = () => {
 
+    const { user, logout } = useContext(AuthContext);
+
+    const handelLogout = () => {
+        logout()
+            .then(() => { })
+            .catch(err => console.log(err))
+    }
+
     const navItem = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/login'>Login</Link></li>
-        <li className='font-semibold'><Link to='/register'>Register</Link></li>
-        <li className='font-semibold'><Link to='/'>Logout</Link></li>
+        {
+            user?.email ?
+                <li className='font-semibold'><Link onClick={handelLogout} to='/'>Logout</Link></li>
+                :
+                <>
+                    <li className='font-semibold'><Link to='/login'>Login</Link></li>
+                    <li className='font-semibold'><Link to='/register'>Register</Link></li>
+                </>
+
+        }
         <li className='font-semibold'><Link to='/blogs'>Blogs</Link></li>
     </>
 
