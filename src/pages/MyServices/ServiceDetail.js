@@ -11,7 +11,7 @@ const ServiceDetail = () => {
                 <Service service={service}></Service>
             }
             {
-                <Reviews></Reviews>
+                <Reviews service={service}></Reviews>
             }
         </div>
     );

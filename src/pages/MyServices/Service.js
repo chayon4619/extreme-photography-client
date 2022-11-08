@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 const Service = ({ service }) => {
-    const { about, name, picture, price } = service;
+    const { _id, about, name, picture, price } = service;
     const { user } = useContext(AuthContext)
     return (
         <div>
@@ -15,7 +15,7 @@ const Service = ({ service }) => {
                         <p className="py-6">{about}</p>
                         <h1 className="text-3xl font-semibold mb-6 text-rose-700">Price : ${price}</h1>
                         {
-                            user?.email ? <Link to='/addreview'><button className="btn btn-primary">Add a review</button></Link>
+                            user?.email ? <Link to={`/addreview/${_id}`}><button className="btn btn-primary">Add a review</button></Link>
                                 :
                                 <Link to='/login'><button className="btn btn-primary">Log in first and give a review</button></Link>
                         }

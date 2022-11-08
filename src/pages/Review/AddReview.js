@@ -1,12 +1,52 @@
 import React, { useContext } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 const AddReview = () => {
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+    const data = useLoaderData();
+    const { _id, name } = data;
+
+    const handelReview = event => {
+        event.preventDefault();
+        const form = event.target;
+        const userName = form.name.value;
+        const email = form.email.value;
+        const photoURL = form.photoURL.value;
+        const reviewText = form.review.value;
+
+        const review = {
+            serviceId: _id,
+            serviceName: name,
+            userName,
+            email,
+            photoURL,
+            reviewText
+        }
+
+
+        fetch('http://localhost:5000/review', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(review)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch(err => console.error(err))
+        console.log(review)
+
+
+
+    }
+
     return (
         <div>
             <section className="p-6 m-10 rounded-lg bg-gray-200 text-gray-900">
-                <form className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
+                <form onSubmit={handelReview} className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">
                     <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-cyan-200">
                         <div className="space-y-2 col-span-full lg:col-span-1">
                             <p className="font-medium">Add A Review</p>
@@ -22,7 +62,7 @@ const AddReview = () => {
                             </div>
                             <div className="col-span-full">
                                 <label htmlFor="bio" className="text-sm">Add Review</label>
-                                <textarea id="bio" placeholder="Add Review" className="w-full rounded-md p-4 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900"></textarea>
+                                <textarea id="bio" name='review' placeholder="Add Review" className="w-full rounded-md p-4 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900"></textarea>
                             </div>
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="photoURL" className="text-sm">Photo URL</label>
