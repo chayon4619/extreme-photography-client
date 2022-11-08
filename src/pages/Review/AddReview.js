@@ -53,11 +53,11 @@ const AddReview = () => {
                         <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="name" className="text-sm">Name</label>
-                                <input id="name" type="text" placeholder="Name" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
+                                <input id="name" type="text" name='name' placeholder="Name" className="w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
                             </div>
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="email" className="text-sm">Email</label>
-                                <input id="email" readOnly defaultValue={user?.email} type="email" placeholder="Email" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-2 border-gray-700 text-gray-900" />
+                                <input id="email" readOnly defaultValue={user?.email} type="email" placeholder="Email" name='email' className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-2 border-gray-700 text-gray-900" />
                             </div>
                             <div className="col-span-full">
                                 <label htmlFor="bio" className="text-sm">Add Review</label>
@@ -65,7 +65,7 @@ const AddReview = () => {
                             </div>
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="photoURL" className="text-sm">Photo URL</label>
-                                <input id="photoURL" type="url" placeholder="Photo URL" className="w-full rounded-md p-2 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
+                                <input id="photoURL" name='photoURL' type="url" placeholder="Photo URL" className="w-full rounded-md p-2 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
                             </div>
                         </div>
                     </fieldset>

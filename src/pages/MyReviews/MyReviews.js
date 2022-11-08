@@ -21,7 +21,6 @@ const MyReviews = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     if (data.deletedCount > 0) {
                         alert('Ticket Canceled successfully!')
                         const remaining = myReviews.filter(mr => mr._id !== id);

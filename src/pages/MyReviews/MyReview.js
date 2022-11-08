@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyReview = ({ myReview, handelDelete }) => {
-    const { _id, serviceName, reviewText } = myReview
+    const { _id, serviceName, reviewText } = myReview;
     return (
         <div>
             <div className="card w-96 bg-cyan-200 text-gray-900">
