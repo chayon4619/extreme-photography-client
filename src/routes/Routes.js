@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/LoginAndRegister/Login";
 import Register from "../pages/LoginAndRegister/Register";
 import MyReviews from "../pages/MyReviews/MyReviews";
+import TotalServices from "../pages/MyServices/TotalServices";
 import SetService from "../pages/SetService/SetService";
 import ErrorPage from "../pages/shared/ErrorPage/ErrorPage";
 
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             {
                 path: '/addservice',
                 element: <SetService></SetService>
+            },
+            {
+                path: '/services',
+                element: <TotalServices></TotalServices>
             }
         ]
     }

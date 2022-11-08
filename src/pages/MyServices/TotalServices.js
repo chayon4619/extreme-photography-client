@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import SingleService from './SingleService';
 
-const MyServices = () => {
+const TotalServices = () => {
+
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('http://localhost:5000/totalServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
 
     return (
-        <div>
+        <div className='mb-14'>
             <h1 className='text-center font-bold text-5xl text-indigo-600 my-8'>All My Services</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mx-8 my-6'>
                 {
@@ -22,11 +22,8 @@ const MyServices = () => {
                     ></SingleService>)
                 }
             </div>
-            <div className='flex justify-center mt-10'>
-                <Link to='/services'><button className="btn btn-outline btn-primary">Show All Service</button></Link>
-            </div>
         </div>
     );
 };
 
-export default MyServices;
+export default TotalServices;
