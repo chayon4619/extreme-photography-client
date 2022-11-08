@@ -62,8 +62,8 @@ const AddReview = () => {
                                 <input id="email" readOnly defaultValue={user?.email} type="email" placeholder="Email" name='email' className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-2 border-gray-700 text-gray-900" />
                             </div>
                             <div className="col-span-full">
-                                <label htmlFor="bio" className="text-sm">Add Review</label>
-                                <textarea id="bio" name='review' placeholder="Add Review" className="w-full rounded-md p-4 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900"></textarea>
+                                <label htmlFor="review" className="text-sm">Add Review</label>
+                                <textarea id="review" name='review' placeholder="Add Review" className="w-full rounded-md p-4 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900"></textarea>
                             </div>
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="photoURL" className="text-sm">Photo URL</label>

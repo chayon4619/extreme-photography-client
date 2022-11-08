@@ -16,7 +16,7 @@ const Review = ({ review }) => {
                         </div>
                     </div>
                 </div>
-                <div className="p-4 space-y-2 font-semibold text-gray-900">
+                <div className="p-4 space-y-2 font-semibold text-sm text-gray-900">
                     <p>{reviewText}</p>
                 </div>
             </div>

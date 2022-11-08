@@ -1,4 +1,34 @@
-# Getting Started with Create React App
+# Extreme Photography repository
+
+## Live Link
+Hosted in firebase [Extreme Photography](https://learn-programming-414b5.web.app/).
+
+## Available Scripts
+
+In the project directory, used:
+
+### React
+### React Router 
+### Tailwind
+### JavaScript
+### Express
+### vercel
+### FireBase
+### MongoDB
+### JWT Token
+### React Photo View
+
+# Resources
+Resources used :
+### HeroIcon
+### Daisy ui
+### Mamba ui
+### kitWind
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +97,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
