@@ -15,7 +15,7 @@ const UpdateReview = () => {
             reviewText: updateReview
         }
 
-        fetch(`http://localhost:5000/reviews/${review._id}`, {
+        fetch(`https://photography-website-server.vercel.app/reviews/${review._id}`, {
             method: "PATCH",
             headers: {
                 'content-type': 'application/json'

@@ -1,7 +1,7 @@
 # Extreme Photography repository
 
 ## Live Link
-Hosted in firebase [Extreme Photography](https://learn-programming-414b5.web.app/).
+Hosted in firebase [Extreme Photography](https://extreme-photography.web.app/).
 
 ## Available Scripts
 

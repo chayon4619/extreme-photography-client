@@ -55,22 +55,22 @@ export const router = createBrowserRouter([
             {
                 path: '/services/services/:id',
                 element: <ServiceDetail></ServiceDetail>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://photography-website-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/services/:id',
                 element: <ServiceDetail></ServiceDetail>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://photography-website-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/addreview/:id',
                 element: <PrivateRoute><AddReview></AddReview></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://photography-website-server.vercel.app/services/${params.id}`)
             },
             {
                 path: '/update/:id',
                 element: <UpdateReview></UpdateReview>,
-                loader: ({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`)
+                loader: ({ params }) => fetch(`https://photography-website-server.vercel.app/reviews/${params.id}`)
             }
         ]
     }

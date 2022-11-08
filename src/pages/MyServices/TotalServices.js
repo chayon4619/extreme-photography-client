@@ -11,7 +11,7 @@ const TotalServices = () => {
     useTitle('Services');
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://photography-website-server.vercel.app/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
