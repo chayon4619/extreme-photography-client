@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import useTitle from '../../hooks/useTitle';
 
 const Service = ({ service }) => {
     const { _id, about, name, picture, price } = service;
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+    useTitle(`${name}`)
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">

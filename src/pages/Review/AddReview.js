@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const AddReview = () => {
     const { user } = useContext(AuthContext);
     const data = useLoaderData();
     const { _id, name } = data;
+    useTitle('Add Reviews')
 
     const handelReview = event => {
         event.preventDefault();
@@ -68,8 +70,7 @@ const AddReview = () => {
                                 <input id="photoURL" name='photoURL' type="url" placeholder="Photo URL" className="w-full rounded-md p-2 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
                             </div>
                         </div>
-                    </fieldset>
-                    <input className='btn btn-outline  btn-block' type="submit" value="Add Review" />
+                    </fieldset><input className='btn btn-outline  btn-block' type="submit" value="Add Review" />
                 </form>
             </section>
         </div>

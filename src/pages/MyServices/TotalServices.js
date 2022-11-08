@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import Loading from '../shared/Loading/Loading';
 import SingleService from './SingleService';
 
 const TotalServices = () => {
 
     const [services, setServices] = useState([]);
-    const { loading } = useContext(AuthContext)
+    const { loading } = useContext(AuthContext);
+    useTitle('Services');
 
     useEffect(() => {
         fetch('http://localhost:5000/services')

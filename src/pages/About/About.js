@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import photo from '../../assets/chayon.jpg'
+import useTitle from '../../hooks/useTitle';
 
 const About = () => {
+    useTitle('About')
     return (
         <div>
             <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-base-100 text-gray-900">

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import Loading from '../shared/Loading/Loading';
 
 const Login = () => {
@@ -9,6 +10,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const from = location?.state?.from?.pathname || '/';
+    useTitle('Login')
 
     const handelLogin = event => {
         event.preventDefault();
