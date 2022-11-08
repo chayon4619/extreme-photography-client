@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const Service = ({ service }) => {
     const { _id, about, name, picture, price } = service;
@@ -9,7 +10,11 @@ const Service = ({ service }) => {
         <div>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src={picture} alt='' className="max-w-sm rounded-lg shadow-2xl" />
+                    <PhotoProvider>
+                        <PhotoView src={picture}>
+                            <img src={picture} alt='' className="max-w-sm rounded-lg shadow-2xl" />
+                        </PhotoView>
+                    </PhotoProvider>
                     <div>
                         <h1 className="text-5xl font-bold">{name}</h1>
                         <p className="py-6">{about}</p>
@@ -21,6 +26,7 @@ const Service = ({ service }) => {
                         }
                     </div>
                 </div>
+
             </div>
         </div>
     );

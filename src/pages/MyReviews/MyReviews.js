@@ -32,7 +32,7 @@ const MyReviews = () => {
 
     return (
         <div>
-            <h1 className='text-center font-bold text-5xl mt-10'>ALL My Reviews</h1>
+            <h1 className='text-center font-bold text-5xl mt-10'>ALL My Reviews : {myReviews.length}</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6 m-10'>
                 {
                     myReviews.map(myReview => <MyReview

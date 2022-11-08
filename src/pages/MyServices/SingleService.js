@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const SingleService = ({ service }) => {
 
@@ -15,7 +16,11 @@ const SingleService = ({ service }) => {
                 </div>
                 <div className="space-y-4">
                     <div className="space-y-2">
-                        <img src={picture} alt="" className="block object-cover object-center w-full rounded-md h-72 bg-gray-500" />
+                        <PhotoProvider>
+                            <PhotoView src={picture}>
+                                <img src={picture} alt="" className="block object-cover object-center w-full rounded-md h-72 bg-gray-500" />
+                            </PhotoView>
+                        </PhotoProvider>
                     </div>
                     <div className="space-y-2">
                         <h1 className="block">
@@ -28,6 +33,7 @@ const SingleService = ({ service }) => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
