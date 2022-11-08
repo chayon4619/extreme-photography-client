@@ -13,6 +13,24 @@ const MyReviews = () => {
             .then(data => setMyReviews(data))
     }, [user?.email]);
 
+    const handelDelete = (id) => {
+        const agree = window.confirm('Are You sure to delete review?');
+        if (agree) {
+            fetch(`http://localhost:5000/review/${id}`, {
+                method: "DELETE"
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.deletedCount > 0) {
+                        alert('Ticket Canceled successfully!')
+                        const remaining = myReviews.filter(mr => mr._id !== id);
+                        setMyReviews(remaining)
+                    }
+                })
+        }
+    }
+
     return (
         <div>
             <h1 className='text-center font-bold text-5xl mt-10'>ALL My Reviews</h1>
@@ -21,6 +39,7 @@ const MyReviews = () => {
                     myReviews.map(myReview => <MyReview
                         key={myReview._id}
                         myReview={myReview}
+                        handelDelete={handelDelete}
                     ></MyReview>)
                 }
             </div>

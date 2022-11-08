@@ -12,11 +12,11 @@ const Review = ({ review }) => {
                         </div>
                         <div>
                             <h4 className="font-bold text-violet-800">{userName}</h4>
-                            <span className="text-xs text-gray-900">{email}</span>
+                            <span className="text-xs font-semibold text-gray-900">{email}</span>
                         </div>
                     </div>
                 </div>
-                <div className="p-4 space-y-2 text-sm text-gray-900">
+                <div className="p-4 space-y-2 font-semibold text-gray-900">
                     <p>{reviewText}</p>
                 </div>
             </div>
