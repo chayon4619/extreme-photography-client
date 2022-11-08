@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../../contexts/AuthProvider';
+import Loading from '../shared/Loading/Loading';
 import SingleService from './SingleService';
 
 const TotalServices = () => {
 
-    const [services, setServices] = useState([])
+    const [services, setServices] = useState([]);
+    const { loading } = useContext(AuthContext)
 
     useEffect(() => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     return (
         <div className='mb-14'>

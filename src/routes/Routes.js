@@ -11,6 +11,7 @@ import TotalServices from "../pages/MyServices/TotalServices";
 import AddReview from "../pages/Review/AddReview";
 import SetService from "../pages/SetService/SetService";
 import ErrorPage from "../pages/shared/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -40,11 +41,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/myreviews',
-                element: <MyReviews></MyReviews>
+                element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>
             },
             {
                 path: '/addservice',
-                element: <SetService></SetService>
+                element: <PrivateRoute><SetService></SetService></PrivateRoute>
             },
             {
                 path: '/services',
@@ -62,7 +63,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/addreview/:id',
-                element: <AddReview></AddReview>,
+                element: <PrivateRoute><AddReview></AddReview></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
             }
         ]

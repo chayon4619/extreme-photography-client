@@ -1,10 +1,14 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import Loading from '../shared/Loading/Loading';
 
 const Login = () => {
 
-    const { login, googleSignIn } = useContext(AuthContext);
+    const { login, googleSignIn, loading } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location?.state?.from?.pathname || '/';
 
     const handelLogin = event => {
         event.preventDefault();
@@ -15,6 +19,7 @@ const Login = () => {
         login(email, password)
             .then(result => {
                 const user = result.user;
+                navigate(from, { replace: true });
                 form.reset();
             })
             .catch(err => console.error(err))
@@ -24,6 +29,10 @@ const Login = () => {
         googleSignIn()
             .then(() => { })
             .catch(err => console.error(err))
+    }
+
+    if (loading) {
+        return <Loading></Loading>
     }
 
     return (
