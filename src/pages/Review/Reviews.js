@@ -3,8 +3,7 @@ import Review from './Review';
 
 const Reviews = ({ service }) => {
     const [reviews, setReviews] = useState([]);
-    const { _id } = service
-    console.log(_id)
+    const { _id } = service;
 
     useEffect(() => {
         fetch(`http://localhost:5000/review/${_id}`)

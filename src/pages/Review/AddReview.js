@@ -34,13 +34,12 @@ const AddReview = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                if (data.acknowledged) {
+                    alert('Review Placed!')
+                    form.reset();
+                }
             })
-            .catch(err => console.error(err))
-        console.log(review)
-
-
-
+            .catch(err => console.error(err));
     }
 
     return (
