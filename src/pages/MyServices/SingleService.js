@@ -24,7 +24,7 @@ const SingleService = ({ service }) => {
                         <p className="leading-snug text-gray-900 font-semibold">{about.length > 90 ? about.slice(0, 90) + '...' : about}</p>
                     </div>
                     <div className='flex justify-end'>
-                        <Link to={`detail/${_id}`}><button className="btn btn-outline btn-primary">View Detail</button></Link>
+                        <Link to={`service/${_id}`}><button className="btn btn-outline btn-primary">View Detail</button></Link>
                     </div>
                 </div>
             </div>
