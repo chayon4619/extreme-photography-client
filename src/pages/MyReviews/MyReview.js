@@ -9,8 +9,8 @@ const MyReview = ({ myReview, handelDelete }) => {
                     <h2 className="card-title text-pink-700">{serviceName}</h2>
                     <p className='items-center  text-center'>{reviewText}</p>
                     <div className="card-actions justify-between">
-                        <button className="btn btn-primary">Edit Review</button>
-                        <button onClick={() => handelDelete(_id)} className="btn btn-ghost">Delete Review</button>
+                        <button className="btn btn-outline btn-primary">Edit Review</button>
+                        <button onClick={() => handelDelete(_id)} className="btn btn-outline btn-ghost">Delete Review</button>
                     </div>
                 </div>
             </div>

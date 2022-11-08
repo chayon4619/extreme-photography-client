@@ -21,7 +21,8 @@ const AuthProvider = ({ children }) => {
     }
 
     const logout = () => {
-        setLoading(true)
+        setLoading(true);
+        localStorage.removeItem('exPhotography-token');
         return signOut(auth);
     }
 
