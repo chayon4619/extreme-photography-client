@@ -16,6 +16,7 @@ const AddReview = () => {
         const email = form.email.value;
         const photoURL = form.photoURL.value;
         const reviewText = form.review.value;
+        const time = form.time.value
 
         const review = {
             serviceId: _id,
@@ -23,7 +24,8 @@ const AddReview = () => {
             userName,
             email,
             photoURL,
-            reviewText
+            reviewText,
+            time
         }
 
 
@@ -68,6 +70,10 @@ const AddReview = () => {
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="photoURL" className="text-sm">Photo URL</label>
                                 <input id="photoURL" name='photoURL' type="url" placeholder="Photo URL" className="w-full rounded-md p-2 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
+                            </div>
+                            <div className="col-span-full sm:col-span-3">
+                                <label htmlFor="time" className="text-sm">Time</label>
+                                <input id="time" name='time' type="time" placeholder="Time" className="w-full rounded-md p-2 focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-gray-700 text-gray-900" />
                             </div>
                         </div>
                     </fieldset><input className='btn btn-outline  btn-block' type="submit" value="Add Review" />
